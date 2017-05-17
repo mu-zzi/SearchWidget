@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search widget</title>
+    
+    <!-- development -->
+    <!-- <base href="/"> -->
+    <!-- production -->
+    <base href="/SearchWidget/">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<!--     <script src="/node_modules/jQuery/dist/jquery.min.js"></script> -->
+    
+    <script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
+    <!-- Polyfill(s) for older browsers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/shim.min.js"></script>
+    <!-- <script src="/node_modules/core-js/client/shim.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.8.10/zone.js"></script>
+    <!-- <script src="/node_modules/zone.js/dist/zone.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.12/system.src.js"></script>
+    <!-- <script src="/node_modules/systemjs/dist/system.src.js"></script> -->
+
+    <!-- development -->
+    <!-- <script src="systemjs.config.js"></script> -->
+    <!-- production -->
+    <script src="systemjs.config.server.js"></script>
+
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <gfbio-ts-search-widget>Loading search widget...</gfbio-ts-search-widget>
+  </body>
+</html>
